@@ -4,7 +4,15 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, Phone, MapPin, Calendar, Send, CheckCircle, AlertCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Send,
+  CheckCircle,
+  AlertCircle,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,7 +38,9 @@ import { contactFormSchema, type ContactFormValues } from "@/lib/validations";
 
 export function ContactContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [statusMessage, setStatusMessage] = useState("");
 
   const form = useForm<ContactFormValues>({
@@ -89,11 +99,12 @@ export function ContactContent() {
               Contact
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-6">
-              Commençons votre <span className="text-[#2563EB]">transformation</span>
+              Commençons votre{" "}
+              <span className="text-[#2563EB]">transformation</span>
             </h1>
             <p className="text-lg text-[#6B7280] max-w-2xl mx-auto">
-              Prêt à passer à l&apos;action ? Contactez-moi pour un premier échange gratuit
-              et sans engagement sur vos objectifs.
+              Prêt à passer à l&apos;action ? Contactez-moi pour un premier
+              échange gratuit et sans engagement sur vos objectifs.
             </p>
           </motion.div>
         </div>
@@ -108,7 +119,9 @@ export function ContactContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl font-bold text-[#1F2937] mb-6">Envoyez-moi un message</h2>
+            <h2 className="text-2xl font-bold text-[#1F2937] mb-6">
+              Envoyez-moi un message
+            </h2>
 
             {/* Status messages */}
             {submitStatus === "success" && (
@@ -126,7 +139,10 @@ export function ContactContent() {
             )}
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
+              >
                 <div className="grid sm:grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
@@ -148,7 +164,11 @@ export function ContactContent() {
                       <FormItem>
                         <FormLabel>Email *</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="jean@exemple.fr" {...field} />
+                          <Input
+                            type="email"
+                            placeholder="jean@exemple.fr"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -164,7 +184,11 @@ export function ContactContent() {
                       <FormItem>
                         <FormLabel>Téléphone</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="06 12 34 56 78" {...field} />
+                          <Input
+                            type="tel"
+                            placeholder="06 12 34 56 78"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -176,7 +200,10 @@ export function ContactContent() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Type de demande *</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <Select
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                        >
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Sélectionnez..." />
@@ -249,29 +276,18 @@ export function ContactContent() {
                 <div className="w-10 h-10 bg-[#2563EB] rounded-lg flex items-center justify-center">
                   <Calendar className="w-5 h-5 text-white" />
                 </div>
-                <h2 className="text-xl font-bold text-[#1F2937]">Réservez un appel découverte</h2>
+                <h2 className="text-xl font-bold text-[#1F2937]">
+                  Réservez un appel découverte
+                </h2>
               </div>
               <p className="text-[#6B7280] mb-4">
-                Choisissez un créneau pour un appel gratuit de 15 minutes pour discuter de vos
-                objectifs.
+                Choisissez un créneau pour un appel gratuit de 15 minutes pour
+                discuter de vos objectifs.
               </p>
               {/* Calendly iframe placeholder */}
               <div className="bg-white rounded-lg border border-[#E5E7EB] p-8 text-center">
                 <Calendar className="w-12 h-12 text-[#6B7280] mx-auto mb-4" />
-                <p className="text-[#6B7280]">
-                  Intégration Calendly
-                  <br />
-                  <span className="text-sm">(Remplacez par votre lien Calendly)</span>
-                </p>
-                <Button asChild variant="outline" className="mt-4">
-                  <a
-                    href="https://calendly.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ouvrir Calendly
-                  </a>
-                </Button>
+                <p className="text-[#6B7280]">Intégration Calendly</p>
               </div>
             </div>
 
@@ -288,7 +304,9 @@ export function ContactContent() {
                 </div>
                 <div>
                   <div className="text-sm text-[#6B7280]">Email</div>
-                  <div className="font-medium text-[#1F2937]">{coachInfo.email}</div>
+                  <div className="font-medium text-[#1F2937]">
+                    {coachInfo.email}
+                  </div>
                 </div>
               </a>
 
@@ -301,7 +319,9 @@ export function ContactContent() {
                 </div>
                 <div>
                   <div className="text-sm text-[#6B7280]">Téléphone</div>
-                  <div className="font-medium text-[#1F2937]">{coachInfo.phone}</div>
+                  <div className="font-medium text-[#1F2937]">
+                    {coachInfo.phone}
+                  </div>
                 </div>
               </a>
 
@@ -311,7 +331,9 @@ export function ContactContent() {
                 </div>
                 <div>
                   <div className="text-sm text-[#6B7280]">Adresse</div>
-                  <div className="font-medium text-[#1F2937]">{coachInfo.address}</div>
+                  <div className="font-medium text-[#1F2937]">
+                    {coachInfo.address}
+                  </div>
                 </div>
               </div>
             </div>

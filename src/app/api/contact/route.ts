@@ -18,7 +18,7 @@ export async function POST(request: Request) {
           success: false,
           error: "Le service d'envoi d'emails n'est pas configuré.",
         },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
           error: "Données invalides",
           details: validationResult.error.flatten().fieldErrors,
         },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -119,14 +119,15 @@ Ce message a été envoyé depuis le formulaire de contact de FitCoach Pro.
           success: false,
           error: "Erreur lors de l'envoi du message. Veuillez réessayer.",
         },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
     // Return success response
     return NextResponse.json({
       success: true,
-      message: "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+      message:
+        "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
       id: data?.id,
     });
   } catch (error) {
@@ -136,7 +137,7 @@ Ce message a été envoyé depuis le formulaire de contact de FitCoach Pro.
         success: false,
         error: "Une erreur inattendue s'est produite. Veuillez réessayer.",
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

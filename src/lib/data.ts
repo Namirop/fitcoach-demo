@@ -210,22 +210,18 @@ export const transformations: Transformation[] = [
   {
     id: "1",
     name: "Jean-Marc D.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80",
+    beforeImage: "/images/jean marc before.png",
+    afterImage: "/images/jean marc after.png",
     duration: "6 mois",
-    weightLost: "22kg",
+    weightLost: "5kg",
     testimonial:
       "Une transformation complète qui a changé ma vie. Alexandre m'a donné les outils pour réussir.",
   },
   {
     id: "2",
     name: "Caroline M.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    beforeImage: "/images/caroline before.png",
+    afterImage: "/images/caroline after.png",
     duration: "4 mois",
     weightLost: "12kg",
     muscleGained: "3kg",
@@ -235,34 +231,28 @@ export const transformations: Transformation[] = [
   {
     id: "3",
     name: "Pierre L.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80",
+    beforeImage: "/images/pierre before.png",
+    afterImage: "/images/pierre after.png",
     duration: "8 mois",
-    muscleGained: "12kg",
+    muscleGained: "6kg",
     testimonial:
       "Prise de masse réussie après des années de stagnation. Les résultats parlent d'eux-mêmes.",
   },
   {
     id: "4",
     name: "Émilie R.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    beforeImage: "/images/emilie before.png",
+    afterImage: "/images/emilie after.png",
     duration: "3 mois",
-    weightLost: "8kg",
+    weightLost: "5kg",
     testimonial:
       "Le pack transformation a dépassé toutes mes attentes. Je recommande sans hésitation !",
   },
   {
     id: "5",
     name: "Marc T.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80",
+    beforeImage: "/images/marc before.png",
+    afterImage: "/images/marc after.png",
     duration: "5 mois",
     weightLost: "18kg",
     testimonial:
@@ -271,10 +261,8 @@ export const transformations: Transformation[] = [
   {
     id: "6",
     name: "Lucie B.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    beforeImage: "/images/lucie before.png",
+    afterImage: "/images/lucie after.png",
     duration: "6 mois",
     weightLost: "15kg",
     muscleGained: "4kg",
@@ -284,22 +272,18 @@ export const transformations: Transformation[] = [
   {
     id: "7",
     name: "François G.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80",
+    beforeImage: "/images/francois before.png",
+    afterImage: "/images/francois after.png",
     duration: "4 mois",
-    muscleGained: "8kg",
+    weightLost: "9kg",
     testimonial:
       "Enfin un coach qui comprend mes objectifs de performance. Résultats au rendez-vous.",
   },
   {
     id: "8",
     name: "Nathalie S.",
-    beforeImage:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    beforeImage: "/images/nathalie before.png",
+    afterImage: "/images/nathalie after.png",
     duration: "7 mois",
     weightLost: "20kg",
     testimonial:

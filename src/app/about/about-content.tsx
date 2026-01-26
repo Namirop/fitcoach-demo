@@ -47,7 +47,7 @@ export function AboutContent() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
+                src="/images/coach sportif.jpg"
                 alt={coachInfo.name}
                 fill
                 className="object-cover"
