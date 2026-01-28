@@ -27,8 +27,8 @@ export const coachInfo = {
   title: "Coach Sportif Certifié",
   experience: "8 ans d'expérience",
   location: "Paris 16ème",
-  email: "contact@fitcoachpro.fr",
-  phone: "+33 6 12 34 56 78",
+  email: "romainmaes@outlook.fr",
+  phone: "06 40 53 38 45",
   address: "42 Avenue Victor Hugo, 75116 Paris",
   bio: [
     "Ancien athlète de haut niveau en athlétisme, j'ai découvert ma vocation pour le coaching sportif après une blessure qui a mis fin à ma carrière de compétiteur. Cette épreuve m'a permis de comprendre l'importance d'un accompagnement personnalisé et bienveillant dans la transformation physique.",

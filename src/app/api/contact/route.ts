@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import { contactFormSchema } from "@/lib/validations";
 
 // Email recipient - can be changed in production
-const CONTACT_EMAIL = process.env.CONTACT_EMAIL || "contact@fitcoachpro.fr";
+const CONTACT_EMAIL = process.env.CONTACT_EMAIL || "romainmaes@outlook.fr";
 
 export async function POST(request: Request) {
   try {

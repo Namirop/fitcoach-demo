@@ -35,6 +35,14 @@ export function MentionsLegalesContent() {
           className="max-w-3xl mx-auto prose prose-gray"
         >
           <div className="space-y-8">
+            {/* Bannière Site Démo */}
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <p className="text-amber-800 font-medium text-center">
+                ⚠️ <strong>Site de démonstration</strong> - Ce site est un template de démonstration.
+                Les informations présentées sont fictives et à titre illustratif uniquement.
+              </p>
+            </div>
+
             <div>
               <h2 className="text-2xl font-bold text-[#1F2937] mb-4">
                 1. Éditeur du site
